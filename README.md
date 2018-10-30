@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple API for a fake blog.
 
-Things you may want to cover:
+Contains the following paths:
 
-* Ruby version
+GET    /posts       posts#index
+POST   /posts       posts#create
 
-* System dependencies
+GET    /posts/:id   posts#show
+PUT    /posts/:id   posts#update
+DELETE /posts/:id   posts#destroy
 
-* Configuration
+A post must have the following:
+  * Title
+  * Author
+  * Body
+  * Categories
 
-* Database creation
+```
+http POST :3000/posts author=me body=Hello,World! title=hello categories=blog
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
