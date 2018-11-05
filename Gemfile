@@ -7,16 +7,17 @@ gem 'rails', '~> 5.2.1'
 gem 'sqlite3'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'rack-cors', require: 'rack/cors'
 
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
+  gem 'faker'
 end
 
 group :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
-  gem 'faker'
   gem 'database_cleaner'
 end
 
